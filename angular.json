@@ -126,8 +126,13 @@
               "devServerTarget": "tic-tac-toe:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "tic-tac-toe"
 }
