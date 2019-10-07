@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./board.component.scss"]
 })
 export class BoardComponent implements OnInit {
-  squares: any[];
+  squares: string[];
   xIsNext: boolean;
   winner: string;
 
@@ -23,7 +23,7 @@ export class BoardComponent implements OnInit {
   }
 
   get player() {
-    return this.xIsNext ? "X" : "O";
+    return this.xIsNext ? 'X' : 'O';
   }
 
   makeMove(idx: number) {
